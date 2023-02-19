@@ -1,3 +1,10 @@
+import { IntroMenu } from './components/IntroMenu'
+import { HomeContainer } from "./styles";
+
 export function HomePage() {
-  return <h1>Home</h1>
+  return (
+    <HomeContainer>
+      <IntroMenu />
+    </HomeContainer>
+  )
 }

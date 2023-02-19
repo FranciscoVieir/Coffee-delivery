@@ -41,7 +41,7 @@ export const HeaderButton = styled.button<HeaderButtonProps>`
   padding: 0 0.5rem;
   position: relative;
   cursor: inherit;
-  /* span {
+  span {
     position: absolute;
     width: 1.25rem;
     height: 1.25rem;
@@ -54,7 +54,7 @@ export const HeaderButton = styled.button<HeaderButtonProps>`
     justify-content: center;
     font-size: 0.75rem;
     font-weight: 700;
-  } */
+  }
   font-size: ${({ theme }) => theme.textSizes["text-regular-s"]};
   ${({ variant }) => css`
     background: ${({ theme }) => theme.colors[`brand-${variant}-light`]};
