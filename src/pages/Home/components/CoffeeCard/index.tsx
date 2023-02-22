@@ -5,7 +5,7 @@ import { QuantityInput } from "../../../../Components/QuantityInput";
 import { ShoppingCart } from 'phosphor-react'
 import { formatMoney } from "../../../../utils/formatMoney";
 
-interface Coffee {
+export interface Coffee {
   id: number;
   tags: string[];
   name: string;
