@@ -1,6 +1,7 @@
 import { HeaderButton, HeaderButtonsContainer, HeaderContainer } from "./styles";
 import coffeeLogoDelivery from '../../assets/Logo.png'
 import { MapPin, ShoppingCart } from 'phosphor-react'
+import { NavLink } from "react-router-dom";
 
 export function Header() {
   return (
@@ -15,9 +16,11 @@ export function Header() {
             Porto Alegre, RS
           </HeaderButton>
 
-          <HeaderButton variant="yellow">
-            <ShoppingCart size={20} weight="fill" />
-          </HeaderButton>
+          <NavLink to="/completeorder">
+            <HeaderButton variant="yellow">
+              <ShoppingCart size={20} weight="fill" />
+            </HeaderButton>
+          </NavLink>
         </HeaderButtonsContainer>
       </div>
     </HeaderContainer>
